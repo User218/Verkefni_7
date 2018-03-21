@@ -35,6 +35,9 @@ def do_login():
 def restricted():
     user = request.get_cookie('account')
     print(user)
-    return "Restricted area"
+    if(user):
+        return "Restricted area"
+    else:
+        return "You are not logged in. Access denied"
 
 run()
