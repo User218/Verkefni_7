@@ -1,5 +1,6 @@
 from bottle import *
 from beaker.middleware import SessionMiddleware
+import os
 
 '''
 @route('/')
