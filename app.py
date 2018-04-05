@@ -94,4 +94,4 @@ def remove_cart():
     session.delete()
     return redirect('/shop')
 
-run(app=my_session, host='0.0.0.0', port=os.environ.get('PORT'))
+run(app=my_session, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
